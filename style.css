@@ -1,0 +1,587 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body { 
+    
+    background-color: black;
+}
+
+/* section header  */
+
+header { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.557)) ,url(img/bg-nvdia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.navbar { 
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.navbar.scrolling-active {
+    background-color: rgb(2, 2, 189);
+    
+}
+
+
+
+.box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .logo h1 { 
+    color: wheat;
+    font-size: 26px;
+} */
+
+.logo img { 
+    width: 150px;
+}
+
+.menu { 
+    display: flex;
+    column-gap: 30px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a { 
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.menu .active a { 
+   background-color: rgb(2, 2, 189);
+}
+
+
+.menu li a:hover { 
+    background-color: rgb(2, 2, 189);
+}
+
+.menu .active a:hover { 
+    background-color: green;
+ }
+
+.menu-bar { 
+    display: none;
+}
+
+/*  section hero  */
+
+.hero { 
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.box-hero { 
+    display: flex;
+    column-gap: 50px;
+    
+}
+
+.box { 
+    
+    flex: 1;
+   
+}
+
+.box:nth-child(1) h1 {
+     color: white;
+     font-size: 24px;
+     margin-bottom: 20px;
+     color: white;
+     --animate-delay: 0.3s;
+      animation: judul 3s infinite;
+     
+    
+}
+
+@keyframes judul {
+    0% {
+        transform: scale(1);
+    }
+
+    50% { 
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+.box:nth-child(1) p {
+    line-height: 1.3;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+    --animate-delay: 0.7s;
+    
+}
+
+.box:nth-child(1) button {
+    font-size: 14px;
+    background-color: rgb(2, 2, 189);
+    border: none;
+    color: white;
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    --animate-delay: 0.9s;
+   
+    
+}
+
+.box:nth-child(1) button:hover {
+    background-color: green;
+    transition: all .3s ease;
+}
+
+.box:nth-child(2) img { 
+    width: 100%;
+    --animate-duration: 3s;
+    
+}
+
+
+
+/*  section services */
+
+.services { 
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
+
+.box-services { 
+
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 50px 0;
+}
+
+.service-kotak {
+    width: 300px;
+   
+}
+
+.service-kotak i { 
+    color: rgb(0, 0, 139);
+    font-size: 32px;
+}
+
+.box-services h1  {
+    font-size: 22px;
+}
+
+.box-services p { 
+    font-size: 16px;
+    color: grey;
+}
+
+/* section pantai  */
+
+.pantai { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pantai-box { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+    
+}
+
+.beach  { 
+    width: 30%;
+    color: white;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.beach:hover  { 
+    transform: translateY(-15px);
+}
+
+.beach h1 { 
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.beach p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.beach img { 
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+   border-radius: 5px;
+}
+
+.beach button { 
+    border: none;
+    width: 100px;
+    font-size: 16px;
+    background-color: rgb(2, 2, 189);;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s ease;
+    height: 30px;
+}
+
+.beach button:hover { 
+    background-color: green;
+}
+
+.daftar { 
+    padding: 50px 0;
+}
+
+.box-daftar { 
+    color: white;
+    text-align: center;
+}
+
+.box-daftar  h1{ 
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+.box-daftar h3 { 
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 10px;
+    animation: animasi 2s infinite;
+    font-weight: 100px;
+}
+
+
+@keyframes animasi {
+    0% {
+        transform: scale(1) ;
+    }
+
+    50% {
+        transform: scale(1.2) ;
+    }
+
+    100% {
+        transform: scale(1) ;
+    }
+}
+.box-daftar button { 
+    font-size: 12px;
+    padding: 3px 10px;
+    background-color:rgb(2, 2, 189);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.box-daftar button:hover { 
+    background-color:green;
+}
+
+/* section footer  */
+
+.footer { 
+    padding: 50px 0;
+}
+
+.box-footer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+    
+}
+
+.penutup { 
+    color: white;
+    width: 33%;
+    text-align: center;
+}
+
+.penutup:nth-child(1) h2 {
+    font-size: 24px;
+}
+
+.penutup:nth-child(1) p {
+    font-size: 16px;
+    color: grey;
+}
+
+.penutup:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.penutup:nth-child(2) h3{
+    font-size: 24px;
+}
+
+.penutup:nth-child(2) a{
+    text-decoration: none;
+    font-size: 16px;
+    color: grey;
+}
+
+.penutup:nth-child(2) a:hover{
+    color: red;
+}
+
+.penutup:nth-child(3) p{
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+   
+}
+
+.penutup:nth-child(3) span{
+    font-weight: bold;
+    color: red;
+}
+
+/* .container { 
+    max-width: 1100px;
+    margin: auto;
+} */
+
+.container { 
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width : 1200px){
+    .container { 
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media (max-width : 990px){
+
+
+    
+    .menu-bar { 
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .menu { 
+        position: absolute;
+        flex-direction: column ;
+        row-gap: 17px;
+        top: 70px;
+        width: 100%;
+        transform: translateX(50%) ;
+        right: 50%;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+       opacity: 0;
+       background-color: rgb(2, 2, 189);
+    }
+
+    .menu.active { 
+        opacity: 1;
+        top : 80px;
+        border-top: 1px solid white;
+    }
+
+
+
+     .box:nth-child(1) h1 {
+        font-size: 32px;
+   }
+   
+   .box:nth-child(1) p {
+       line-height: 1.3;
+       font-size: 14px;
+   }
+   
+   .box:nth-child(1) button {
+       font-size: 14px;
+       width: 150px;
+       height: 40px;
+      
+}
+
+.hero { 
+    padding-top: 70px;
+}
+
+
+.service-kotak i { 
+    font-size: 30px;
+}
+
+.box-services h1  {
+    font-size: 20px;
+    
+}
+
+.box-services p { 
+    font-size: 14px;
+}
+
+
+.beach  { 
+    width: 45%;
+    color: white;
+}
+
+.beach h1 {
+    font-size: 20px;
+}
+.beach p { 
+    font-size: 14px;
+}
+
+.beach img { 
+    width: 100%;
+    height: 200px;
+   
+}
+
+.beach button { 
+    font-size: 14px;
+}
+
+
+
+
+}
+@media (max-width : 768px) { 
+    .box-hero { 
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+
+    .box { 
+        text-align: center;
+    }
+
+    .box:nth-child(2) img { 
+        width: 70%;
+    }
+
+    .service-kotak i { 
+        font-size: 28px;
+    }
+    
+    .box-services h1  {
+        font-size: 18px;
+    }
+    
+    .box-services p { 
+        font-size: 14px;
+    }
+
+    .pantai-box { 
+        justify-content: center;
+    }
+    .beach  { 
+        width: 90%;
+        color: white;
+       text-align: center;
+    }
+
+    .beach img { 
+        width: 80%;
+       height: auto;
+    }
+
+    .box-daftar h1 { 
+        font-size: 22px;
+    }
+
+    .box-daftar h3 { 
+        font-size: 14px;
+    }
+    
+    .box-footer { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .penutup { 
+        width: 100%;
+    }
+}
+
+
+@media (max-width : 400px) {
+    .box:nth-child(1) h1 {
+        font-size: 24px;
+   }
+   
+   .box:nth-child(1) p {
+       line-height: 1.3;
+       font-size: 12px;
+   }
+   
+   .box:nth-child(1) button {
+       font-size: 12px;
+       width: 120px;
+       height: 30px;
+      
+}
+
+.service-kotak i { 
+    font-size: 26px;
+}
+
+.box-services h1  {
+    font-size: 16px;
+}
+
+.box-services p { 
+    font-size: 11px;
+}
+}
